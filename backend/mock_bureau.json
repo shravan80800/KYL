@@ -1,0 +1,85 @@
+{
+  "_comment": "OmniShield mock bureau database. Keyed by applicant name (case-insensitive). In production, replace verify_bureau() in agents.py with a real CIBIL/Experian API call.",
+  "profiles": [
+    {
+      "name": "Shravan",
+      "pan": "SHRVM1234A",
+      "cibil_score": 810,
+      "fraud_risk": "LOW",
+      "eligible": true,
+      "note": "Premium tier — highest loan eligibility"
+    },
+    {
+      "name": "Priya",
+      "pan": "PRIYP5678B",
+      "cibil_score": 765,
+      "fraud_risk": "LOW",
+      "eligible": true,
+      "note": "Gold tier — strong profile"
+    },
+    {
+      "name": "Rahul",
+      "pan": "RAHLS9012C",
+      "cibil_score": 720,
+      "fraud_risk": "LOW",
+      "eligible": true,
+      "note": "Standard tier"
+    },
+    {
+      "name": "Ananya",
+      "pan": "ANNYP3456D",
+      "cibil_score": 655,
+      "fraud_risk": "MEDIUM",
+      "eligible": true,
+      "note": "Standard tier with medium flag — slightly elevated rate"
+    },
+    {
+      "name": "Deepak",
+      "pan": "DPAKR7890E",
+      "cibil_score": 590,
+      "fraud_risk": "LOW",
+      "eligible": true,
+      "note": "Sub-prime tier — smaller loan, higher rate"
+    },
+    {
+      "name": "Meera",
+      "pan": "MERAP2345F",
+      "cibil_score": 780,
+      "fraud_risk": "LOW",
+      "eligible": true,
+      "note": "Gold tier"
+    },
+    {
+      "name": "Ravi",
+      "pan": "RAVIM6789G",
+      "cibil_score": 695,
+      "fraud_risk": "LOW",
+      "eligible": true,
+      "note": "Standard tier"
+    },
+    {
+      "name": "Sunita",
+      "pan": "SUNTA0123H",
+      "cibil_score": 740,
+      "fraud_risk": "MEDIUM",
+      "eligible": true,
+      "note": "One missed payment flagged in history"
+    },
+    {
+      "name": "Kiran",
+      "pan": "KIRNB4567I",
+      "cibil_score": 520,
+      "fraud_risk": "LOW",
+      "eligible": true,
+      "note": "Borderline — minimal loan only"
+    },
+    {
+      "name": "Fraudster",
+      "pan": "FRAUD1234J",
+      "cibil_score": 280,
+      "fraud_risk": "HIGH",
+      "eligible": false,
+      "note": "Hard reject — known fraud pattern in bureau data"
+    }
+  ]
+}
