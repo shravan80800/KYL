@@ -1,4 +1,4 @@
-# OmniShield v2 — Full Setup & Wiring Guide
+# KYL — Full Setup & Wiring Guide
 
 ## Project layout
 
